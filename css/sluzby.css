@@ -8,13 +8,11 @@
     display: grid;
 }
 
-
-
 .pozadie1 {
-    height: 50em; /* 800px */
-    background-image: url(fotky/banner-bg.jpg);
-    background-position: center;
+    height: 31.25em; /*500px*/
+    background-image: url(fotky/heading-bg.jpg);
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,58 +151,41 @@
 }
 
 
-.input-domena {
-    background: none;
-    width: 46em;
-    height: 3.3em;
-    border: 0.2em solid rgb(255, 255, 255);
-    margin-right: 1rem;
-}
+/* nadpis */
 
-/* zarovnanie domena input text + vyhladaj button */
-.domena_button {
+.text-nadpis {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    font-size: 2em;
+    margin-bottom: 2em;
 }
 
-/* zarovnanie checkboxov */
-.checkboxy {
-    margin-top: 2rem;
+
+
+.text-podnadpis {
     display: flex;
-    justify-content: center;
-    color: white;
+    flex-direction: row;
+    justify-content: center;    
 }
 
-.gap {
-    margin-left: 2rem;
+.lomitko {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
-.checkboxy p {
-    padding-left: 10px;
+.opacita {
+    opacity: 0.50;
+}
+
+.txt {
+    margin: auto;
 }
 
 
-.blok-vyhladavanie h1 {
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    margin-bottom: 3rem;
-    font-size: 2.3em;
-}
 
-.input-domena::placeholder {
-    padding-left: 1em;
-    font-size: 1.2em;
-    color: white;
-    opacity: 0.5;
-}
 
-.blok-vyhladavanie {
-    width: 50em;
-    height: 165px;
-    margin: auto 0;
-}
-/* tu začína 2. sekcia - text (hostingove služby) + grid 3x peniaze */
+/* druha sekcia */
+
 
 .pozadie2 {
     height: 60em;
@@ -218,7 +199,7 @@
 }
 
 .vyhladat {
-    background-color:#00bcd4;
+    background-color:#00bcd0;
     width: 12em;
     height: 49.31px;
     color: white;
@@ -240,7 +221,7 @@
     color: #6a6a6a;
 }
 .riadok1 {
-    color: #00bcd4;
+    color: #00bcd0;
     margin-bottom: 0.8rem;
     font-weight: 600;
 }
@@ -253,63 +234,69 @@
     color: #6a6a6a;
 }
 
-.stlpce {
-    width: 71.25em;
-    display: grid;
-    grid-template-columns: repeat(3, 22.41666666666667em);
-    grid-template-rows: 25em;
-    gap: 2em;
-    justify-content: center;
-    margin-top: 7em;
-    text-align: center;
+/* galeria */
 
+.galeria {
+    display: grid;
+    width: 1140px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    gap: 2em;
+    margin-top: 8em;
+    margin-bottom: 10em;
 }
 
-.stlpec1 {
-    background-color: #f7f7f7;
+.galeria div {
     display: flex;
     flex-direction: column;
+    background-color: #f7f7f7;
+    border-radius: 0.3em;
     justify-content: center;
     align-items: center;
-    padding: 0 1.6em;
-    border-radius: 0.3em;
+    padding: 0 2.5em;
+    text-align: center;
+}
+
+.fa-cloud::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #00BCD4;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
 }
 
 .stlpec1 h3 {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
+    color: #1e1e1e;
 }
 
-.stlpec2 {
-    background-color: #f7f7f7;
+.stlpec1 p {
+    color: #6a6a6a;
+    line-height: 1.5em;
+}
+
+.fa-server::before {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 0 1.3em;
-    border-radius: 0.3em;
+    justify-content: center;
+    color: white;
+    background-color: #00BCD4;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
 }
 
 .stlpec2 h3 {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
+    color: #1e1e1e;
 }
 
-.stlpec2 a{
-    text-decoration: none;
-    color: rgb(20, 99, 247);
-}
-
-.stlpec3 {
-    background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1.3em;
-    border-radius: 0.3em;
-}
-
-.stlpec3 h3 {
-    margin-bottom: 2rem;
+.stlpec2 p {
+    color: #6a6a6a;
+    line-height: 1.5em;
 }
 
 .fa-database::before {
@@ -319,165 +306,96 @@
     color: white;
     background-color: #00BCD4;
     border-radius: 50%;
-    margin-bottom: 2rem;
     width: 5.5rem;
     height: 5.5rem;
 }
 
-/* tu začína 3. pozadie, konfiguracia cloud hostingu, stlpce */
+.stlpec3 h3 {
+    margin: 2rem 0;
+    color: #1e1e1e;
+}
+
+.stlpec3 p {
+    color: #6a6a6a;
+    line-height: 1.5em;
+}
+
+.fa-save::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #00BCD4;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.stlpec4 h3 {
+    margin: 2rem 0;
+    color: #1e1e1e;
+}
+
+.stlpec4 p {
+    color: #6a6a6a;
+    line-height: 1.5em;
+}
+
+
+.fa-check::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #00BCD4;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.stlpec5 h3 {
+    margin: 2rem 0;
+    color: #1e1e1e;
+}
+
+.stlpec5 p {
+    color: #6a6a6a;
+    line-height: 1.5em;
+}
+
+.fa-support::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #00BCD4;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.stlpec6 h3 {
+    margin: 2rem 0;
+    color: #1e1e1e;
+}
+
+.stlpec6 p {
+    color: #6a6a6a;
+    line-height: 1.5em;
+}
+
+/* kopirka recenzia a fotter len */
+
+
 
 .pozadie3 {
-    background: url(fotky/pricing-bg.jpg);
-    height: 31.25em; /*500px*/
-    background-position: center;
-    background-size: cover;
-}
-
-.text2 {
-    display: grid;
-    color: white;
-    font-family: Roboto;
-    justify-content: center;
-    text-align: center;
-    margin: 4rem 0;
-}
-
-.text2 h1 {
-    margin-bottom: 2rem;
-}
-
-.pozadie4 {
-    background-color: white;
-    height: 40em;
-    z-index: 0;
-}
-
-/* tu robím 3 grid panely s fajkami a btnmi */
-
-.panely {
-    display: grid;
-    grid-template-columns: repeat(3, 22em);
-    grid-template-rows: 45em;
-    gap: 1.75em;
-    justify-content: center;
-    text-align: center;
-    
-}
-
-.fa-check {
-    color: blue;
-}
-
-.stlpec4 {
-    background-color: white;
-    z-index: 1;
-    box-shadow: 0px 0px 3px #6a6a6a;
-}
-    
-
-
-.stlpec5 {
-    background-color: white;
-    z-index: 1;
-    box-shadow: 0px 0px 3px #6a6a6a;
-}
-
-.stlpec6 {
-    background-color: white;
-    z-index: 1;
-    box-shadow: 0px 0px 3px #6a6a6a;
-}
-
-.panely h3 {
-    color: #1e1e1e;
-    text-transform: uppercase;
-    margin: 2.3rem 0;
-}
-
-.sirka_riadka {
-    line-height: 2.8rem;
-}
-
-.podfarbenie {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #00BCD4;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2.3rem;
-    width: 17em;
-    height: 7em;
-}
-
-.podfarbenie_vylepsene {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    background: linear-gradient(60deg, #7202BB, #3264f5);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2.3rem;
-    width: 17em;
-    height: 7em;
-}
-
-.sivy {
-    color: #6a6a6a;
-}
-.ciarka {
-    margin: 2.3rem 0;
-    color: #6a6a6a;
-    opacity: 0.2;
-}
-
-.vybrat_cloud {
-    width: 11em;
-    height: 3.5em;
-    background-color: #00bcd4;
-    border: none;
-    color: white;
-    text-transform: uppercase;
-    margin-top: 3.11rem;
-}
-
-.vybrat_cloud:hover {
-    background-color: #00A4B9;
-}
-
-
-.vybrat_cloud_vylepseny {
-    width: 11em;
-    height: 3.5em;
-    background: linear-gradient(60deg, #7202BB, #3264f5);
-    border: none;
-    color: white;
-    text-transform: uppercase;
-    margin-top: 3.11rem;
-}
-
-.vybrat_cloud_vylepseny:hover {
-    background: linear-gradient(60deg, #3264f5, #7202BB);
-}
-
-.lavy {
-    width: 17em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-
-/* tu zacina 5. pozadie (napísali o nás..) */
-
-.pozadie5 {
     height: 55em;
     background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-top: 20em;
 }
 
 .text3 {
@@ -487,7 +405,7 @@
 }
 
 .riadok4 {
-    color: #00bcd4;
+    color: #00bcd0;
     margin-top: 5.5rem;
     font-weight: 500;
     font-size: 1.2rem;
@@ -527,8 +445,8 @@
     margin-bottom: 2rem;
 }
 
-.riadok7 {
-    color: #00bcd4;
+.riadok8 {
+    color: #00bcd0;
     margin-bottom: 1.5rem;
     font-weight: 500;
 
@@ -538,7 +456,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #00bcd4;
+    color: #00bcd0;
     font-size: 3rem;
 }
 
@@ -550,7 +468,7 @@
     opacity: 0.4;
 }
 
-/* tu začína footer */
+/* footer */
 
 .pozadie6 {
     display: flex;
@@ -606,15 +524,12 @@
     color: #ffffff;
 }
 
-
 .ciarka-spodok {
     border: 1px solid white;
     width: 74em;
     margin-top: 1.3em;
     opacity: 0.30;
 }
-
-
 
 .footer-text {
     margin-top: 2.5rem;
