@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.obal {
+    display: grid;
+}
+
+
+.pozadie1 {
+    height: 31.25em; /*500px*/
+    background-image: url(fotky/heading-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.main-menu {
+    margin-top: 1.3em;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.main-menu ul{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr 2fr 2fr;
+    align-items: center;
+}
+
+.main-menu a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.zenit {
+    font-size: 1.7em;
+}
+.cloud {
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 0.3em;
+    padding-top: 9px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.prekliky {
+    width: 1140px;
+    display: flex;
+    justify-self: center;
+}
+
+.main-menu .uvod:hover {
+    color: #3e51ea;
+    transition: 0.5s ease;
+}
+
+.uvod {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+.main-menu .onas:hover {
+    color: #3e51ea;
+    transition: 0.5s ease;
+}
+
+.main-menu .onas {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.main-menu .sluzby:hover {
+    color: #3e51ea;
+    transition: 0.5s ease;
+}
+
+.main-menu .sluzby {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.main-menu .kontakt:hover {
+    color: #3e51ea;
+    transition: 0.5s ease;
+}
+
+.main-menu .kontakt {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.ciarka-vrch {
+    border: 1px solid white;
+    width: 100%;
+    margin-top: 1.3em;
+    opacity: 0.30;
+}
+
+.button-prihlasit {
+    margin-left: 4em;
+}
+
+.prihlasit {
+    width: 9em;
+    height: 3em;
+    background: none;
+    border: 0.05rem solid white;
+    color: white;
+}
+
+.prihlasit:hover {
+    color: #00A4B9;
+    background-color: white;
+    transition: 0.5s ease;
+
+}
+
+.registrovat {
+    width: 11em;
+    height: 40px;
+    background: none;
+    background-color:  #00BCD4;
+    border: none;
+    color: white;
+}
+
+.registrovat:hover {
+    background-color: #00A4B9;
+}
+
+/* nadpis */
+
+.text-nadpis {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+
+
+.text-podnadpis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+.lomitko {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.opacita {
+    opacity: 0.50;
+}
+
+.txt {
+    margin: auto;
+}
+
+
+/* tu začína 2. sekcia */
+
+.pozadie2 {
+    background-color: white;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    margin: 145.01px 0;
+}
+
+
+.meno {
+    height: 45px;
+    width: 500px;
+    border: none;
+    margin-bottom: 2.5em;
+    box-shadow: 0px 0px 3px #6a6a6a;
+}
+
+.meno::placeholder {
+    padding-left: 1em;
+    font-size: 1.2em;
+    color: #1e1e1e;
+    opacity: 0.5;
+}
+
+.heslo {
+    height: 45px;
+    width: 500px;
+    border: none;
+    margin-bottom: 2.5em;
+    box-shadow: 0px 0px 3px #6a6a6a;
+}
+
+.heslo::placeholder {
+    padding-left: 1em;
+    font-size: 1.2em;
+    color: #1e1e1e;
+    opacity: 0.5;
+}
+
+.prihlasit2 {
+    width: 14em;
+    height: 4em;
+    background: none;
+    background-color:  #00BCD4;
+    border: none;
+    color: white;
+}
+    
+.prihlasit2:hover {
+    background-color: #00A4B9;
+}
+
+/* kopirka */
+
+.pozadie3 {
+    height: 55em;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.text3 {
+    display: grid;
+    width: 71.25em;
+    
+}
+
+.riadok4 {
+    color: #00bcd0;
+    margin-top: 5.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.ciarka-stredna {
+    border: 1px solid #1e1e1e;
+    width: 74em;
+    margin: 5em 0;
+    opacity: 0.1;
+}
+
+.riadok5 {
+    color: #1e1e1e;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.fa-quote-right::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    background: linear-gradient(60deg,#7202BB, #3264f5);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.riadok6 {
+    color: #6a6a6a;
+    margin-top: 5rem;
+    padding: 0 10rem;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    font-style: italic;
+
+}
+
+.text3 h3 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.riadok8 {
+    color: #00bcd0;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+
+}
+
+.bodky {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #00bcd0;
+    font-size: 3rem;
+}
+
+.druha_bodka {
+    opacity: 0.7;
+}
+
+.tretia_bodka {
+    opacity: 0.4;
+}
+
+/* footer */
+
+.pozadie6 {
+    display: flex;
+    height: 31.25em;
+    background-image: url(fotky/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+
+}
+.footer {
+    height: 15em;
+    margin-top: 6rem;
+    width: 71.25em;
+    display: grid;
+    grid-template-columns: 14em 41.25em 16em;
+    grid-template-rows: 15em;
+    gap: 2em;
+    align-items: flex-start;
+    
+}
+
+.footer h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.stlpec7 p {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.stlpec8 p {
+    color: white;
+    font-weight: 400;
+    padding-right: 2em;
+}
+
+.stlpec9 p {
+    color: white;
+}
+
+.text4 {
+    width: 71.25em;
+    height: 5em;
+    display: grid;
+    flex-direction: row;
+    grid-column: 1/4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.ciarka-spodok {
+    border: 1px solid white;
+    width: 74em;
+    margin-top: 1.3em;
+    opacity: 0.30;
+}
+
+.footer-text {
+    margin-top: 2.5rem;
+}
+
+.tensi-text {
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+.stlpec9 div{
+    display: flex;
+    flex-direction: row;
+
+}
